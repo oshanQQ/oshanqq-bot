@@ -1,0 +1,10 @@
+version: "3"
+services:
+  malcov-sample:
+    restart: always
+    build: .
+    container_name: "malcov-sample"
+    working_dir: "/malcov-sample"
+    tty: true
+    volumes:
+      - .:/malcov-sample

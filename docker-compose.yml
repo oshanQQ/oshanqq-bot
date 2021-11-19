@@ -1,10 +1,10 @@
 version: "3"
 services:
-  malcov-sample:
+  oshanqq-bot:
     restart: always
     build: .
-    container_name: "malcov-sample"
-    working_dir: "/malcov-sample"
+    image: oshanqq-bot
+    working_dir: "/oshanqq-bot"
     tty: true
     volumes:
-      - .:/malcov-sample
+      - .:/oshanqq-bot

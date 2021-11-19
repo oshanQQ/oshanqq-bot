@@ -1,4 +1,4 @@
-# malcov-sample
+# fake-ocean
 
 anaconda 環境を立ち上げる
 

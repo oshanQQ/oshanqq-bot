@@ -1,6 +1,12 @@
 # oshanqq-bot
 
-anaconda 環境を立ち上げる
+`Dockerfile`からイメージを差作成する
+
+```bash
+docker-compose build
+```
+
+python 環境を立ち上げる
 
 ```bash
 docker-compose up

@@ -11,7 +11,7 @@ def wakati(text):
 
 #デフォルトの文の数は5
 def generate_text(num_sentence=5):
-    filename = "test.txt"
+    filename = "meros.txt"
     src = open(filename, "r").read()
     wordlist = wakati(src)
 
@@ -42,4 +42,4 @@ def generate_text(num_sentence=5):
     print(sentence)
 
 if __name__ == "__main__":
-    generate_text(1)
+    generate_text(5)

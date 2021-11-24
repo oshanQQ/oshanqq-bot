@@ -1,4 +1,5 @@
 import random
+import twitter_handler
 from janome.tokenizer import Tokenizer
 
 # Janomeを使用してテキストデータを単語に分割する
@@ -11,8 +12,10 @@ def wakati(text):
 
 #デフォルトの文の数は5
 def generate_text(num_sentence=5):
-    filename = "meros.txt"
-    src = open(filename, "r").read()
+    # filename = "meros.txt"
+    # src = open(filename, "r").read()
+    src = twitter_handler.get_user_tweets()
+    print(src)
     wordlist = wakati(src)
 
     #マルコフ連鎖用のテーブルを作成
@@ -42,4 +45,4 @@ def generate_text(num_sentence=5):
     print(sentence)
 
 if __name__ == "__main__":
-    generate_text(5)
+    generate_text(1)

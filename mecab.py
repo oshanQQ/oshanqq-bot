@@ -8,7 +8,6 @@ def wakati(text):
     return result
 
 words = wakati("さあ、お前の罪を数えろ")
-print(type(words))
 
 for word in words:
   print(word)

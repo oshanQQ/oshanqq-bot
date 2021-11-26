@@ -5,8 +5,7 @@ RUN apt-get update \
   && rm -rf /var/lib/apt/lists/*
 
 RUN pip install janome \
-  requests \
-  requests-oauthlib \
+  tweepy \
   python-dotenv
 
 RUN pip install --upgrade pip
